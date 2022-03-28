@@ -1,0 +1,36 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+    border:1px solid #555e52;
+}
+.container {
+    height: 70vh;
+    display: grid;
+}
+header, nav, footer {
+    height:10vh;
+}
+header {
+background-color: blue;
+}
+nav {
+    background-color:red;
+}
+main {
+    background-color:yellow;   
+}
+aside {
+    background-color: grey;
+}
+footer {
+    background-color: green;
+}
+
+@media only screen and (min-width: 480px) {
+    .container {
+        height: 70vh;
+        display: grid;
+    }
+     main { grid-area: 1 / 1 / 1 / 3;}
+     aside {grid-area: 2 / 3 / 1 / 3;}    
+    }
